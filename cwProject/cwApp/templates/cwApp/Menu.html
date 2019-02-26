@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>hi</h1>
+{# List all drinks #}
+{% for x in drinks %}
+<a href="{% url 'drinkContent' x.id %}">{{x.name}}</a>
+<br>
+{% endfor %}
+</body>
+</html>

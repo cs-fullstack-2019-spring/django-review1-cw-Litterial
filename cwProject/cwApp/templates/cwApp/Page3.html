@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{# allPages takes the information of the current page #}
+<h1>Page 3</h1>
+<a href ="{% url 'home'  allPages %}">Home</a>
+<a href ="{% url 'page2' allPages %}">Page 2</a>
+<a href ="{% url 'page4' allPages %}">Page 4</a>
+<a href ="{% url 'page5' allPages %}">Page 5</a>
+<h1> Previous Page: {{previous}}</h1>
+{# Remembers the previous page #}
+
+</body>
+</html>

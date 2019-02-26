@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{# Location when you click a drink #}
+Drink Name:{{drinkName.name}}
+<br>
+Alcohol Percentage: {{drinkName.alcoholPercentage}}%
+<br>
+Serving Glass:{{drinkName.servingGlass}}
+<br>
+<a href="{% url 'alcohol' %}">Return Home</a>  {# GO home #}
+</body>
+</html>
